@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passando outros tipos de valores dentro do objeto</title>
+</head>
+
+<body>
+    <script>
+        //Objeto dentro do outro
+
+        var usuario = {
+            nome: 'Warllei',
+            'nome-completo': 'Warllei Martins',
+            idade: 25,
+            youtube: 'ProgramadorAqui',
+            OutrasLinguagens: {
+                linguagens: ['PHP', 'Go', 'Scala']
+            }
+        };
+
+        //Objeto com objeto/array dentro dele
+        usuario.hobbies = ['Música', 'Programar', 'Pedalar', 'Jogar']
+        console.log(usuario.hobbies)
+        console.log(usuario)
+
+        //Objeto com 2 objetos/array dentro dele
+        usuario.competencias = {
+            linguagens: ['JS', 'HTML', 'CSS', 'Python', 'C#', 'C++'],
+            instrumentos: ['Guitarra', 'Baixo', 'Bateria', "violão"]
+        };
+
+        console.log(usuario)
+    </script>
+</body>
+
+</html>

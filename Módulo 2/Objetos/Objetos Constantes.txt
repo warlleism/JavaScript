@@ -1,0 +1,5 @@
+----------- Objetos Constantes --------------
+
+- Porque mesmo sendo declarado dentro de constantes os objetos podem ser alterados?
+
+- Como constante ela sempre apontara para o objeto que está no mesmo endereço 

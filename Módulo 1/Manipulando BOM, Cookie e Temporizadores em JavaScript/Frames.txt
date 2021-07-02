@@ -1,0 +1,21 @@
+------------- Frames --------------
+
+- Todas as linhas de código em JavaScript, carregadas por uma mesma página interagem com o mesmo objeto window. muitas vezes ao se carregar
+uma página esta pode conter outras incorporadas no seu corpo queecarregam suas próprias linhas de código.
+
+- Essa icorporação é feita normalmente através de quadros e são listados através do objeto frame dentro de window.
+
+- Quadros utilizam tags para delimitar sua abrangência.
+
+- Iframe é flexivel com a incorporação de uma simples imagem e pode ser organizado e ajustado em qualquer parte da página principal e oferece o controle sobre o conteúdo "Document" presente no iframe
+que diminui os riscos à segurança.
+
+- A partir do HRML5 a tag iframe recebeu a possibilidade de enviar mensagens de maneira segura entre janelas diferentes.
+Ex: window.frames[0].postMessage 
+
+- postMessage - Recebe como parâmetros a mensagem em si, que pode ser qualquer objeto da linguagem JS, e sem seguida recebe a restrição de domínios-alvo da mensagem
+
+- TWO-SIDED - Modelo que garante a segurança da comunicação. Ambas as partes devem identificar uma a outra/ tanto quem envia quanto quem recebe deve identificar positivamente o alvo
+da comunicação.
+
+- window.frames - lista todos os quadros existentes na página em um array. cada frame pode ser acessado através de indexação pelo numero,ordem que aparece na lista ou apartir de uma chave com seu nome.

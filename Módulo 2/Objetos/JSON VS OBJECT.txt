@@ -1,0 +1,13 @@
+------------- JSON VS OBJECT -------------------
+
+- É um formato de intercâmbio de dados leve. É fácil para humanos ler e escrever. É fácil para as máquinas analisar e gerar.
+
+- Json é um formato textual,formato da dados muito usado para interoperabilidade entre sistemas. É um formato simples de ser gerado e interpretado pelo computador.
+
+- JSON é um formato de dados, então não é executável.
+
+- JSON.stringify() converte valores em javascript para uma String  JSON
+
+- Todos os atributos no formato JSON devem ser delimitado por - ""(Valores como strings usar aspas duplas, numeros sem aspas)
+
+- Normalmente usado para retorno de dados

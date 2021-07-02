@@ -1,0 +1,39 @@
+------------- Funções -----------
+
+- First-Class Object ( citzens )
+
+- Higher-Order function ( função de alta ordem ) 
+
+- Blocos em funções são obrigatórios
+
+- uma função é um bloco de código nomeado ou anônima.
+
+- funções podem retornar ou não valores.
+
+- uma função pode não receber nenhum parâmetro, não retornar dado, pode receber dados de entrada.
+
+- Objetos e classes em JS são uma funções
+
+- funções são ações executadas assim que são chamadas ou em decorrência de algum evento.
+
+- uma função pode receber parâmetros e retorna um resultado.
+
+- Toda função tem:
+
+- Toda função precisa ter uma chamada.
+
+- Parâmetro - entrada
+
+- Ação - Toda função tem uma ação envolvida
+
+- Retorno - uma função em javaScript só tem como resultado 1 retorno
+
+- Recurção - É quando uma função chama ela mesma.
+
+---------------- Return ----------------
+
+- Usamos o "Return" em um ponto apropriado do programa apra retornar valores.
+
+- Quando a instrução return é encontrada, o processamento do código da função para neste ponto, e o valor (e o controle) para o chamador.
+
+- Pode-se ter mais de um return e uma função.

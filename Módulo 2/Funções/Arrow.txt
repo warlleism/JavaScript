@@ -1,0 +1,3 @@
+------------- Funções Arrow ------------------
+
+- Função Arrow sempre é anônima então para ser chamada deve-se armazená-la em uma variável ou constant

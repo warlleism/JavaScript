@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+        window.document.write(`${Date()}<br><br>`);//impressão da data completa
+
+        var dt = new Date();//Criando objeto do tipo date
+
+         // Exercicio 3 (usando o set para modificar)
+
+        var data = new Date();
+        data.setDate(dt.getDate() + 2) //Adicionando 2 dias a cada metodo
+        
+        var dia = data.getDay();
+        var diaMes = data.getDate();
+        var mes = data.getMonth();
+        var anoCompleto = data.getFullYear();
+        var hora = data.getHours();
+        var minutos = data.getMinutes();
+        var segundos = data.getSeconds();
+        var dataEUA = data.toDateString();
+        var dataLocal = data.toLocaleDateString();
+        var dataHoraLocal = data.toLocaleString();
+
+        document.write(`${dt}<br><br>`);
+        document.write(`Dia - ${dia}<br><br>`);
+        document.write(`Dia do mês - ${diaMes}<br><br>`);
+        document.write(`Mês - ${mes}<br><br>`);
+        document.write(`Ano completo(2021) - ${anoCompleto}<br><br>`);
+        document.write(`Hora - ${hora}<br><br>`);
+        document.write(`Minutos - ${minutos}<br><br>`);
+        document.write(`Segundos - ${segundos}<br><br>`);
+        document.write(`Data Padrão Americana - ${dataEUA}<br><br>`);
+        document.write(`Data formato local - ${dataLocal}<br><br>`)
+        document.write(`Data e Hora no formato local - ${dataHoraLocal}<br><br>`)
+
+        // Exercicio 1 
+
+        var meses = new Array("janeiro","Fevereiro","Março","Abril","Maio","junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro");
+        var semanas = new Array("Domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado")
+        window.document.write(semanas[dia] + " , " + "dia - " + diaMes + " - " +  meses[mes] + " de " + anoCompleto);
+        window.document.write(`<br><br>`)
+
+        // Exercicio 2 (incrementando metodos/Gambiarra)
+
+        var data = new Date();
+
+        var tmp = 5;
+
+        var diaa = dt.getDate() + tmp;
+        var mess = dt.getMonth() + tmp;
+        document.write(`Dia do mês - ${diaa}<br><br>`);
+        document.write(`Mês - ${mess}<br><br>`);
+
+
+    </script>
+</body>
+</html>

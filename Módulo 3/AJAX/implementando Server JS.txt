@@ -1,0 +1,55 @@
+------------- implementando Server.JS --------------
+
+- Para prover arquivos estáticos
+
+- Criar serviços no back-end
+
+--------- Comandos: 
+
+- No terminal -  npm init -y // Para criar o arquivo package.json que descreve algumas coisas do nosso projeto
+
+- No Package.json - "dependencies": { "body-parser": "1.18.2"} // Responsável por fazer o parser(análise sintática) da requisição.(leitura dos dados no corpo da requisição)
+
+- No Package.json - "dependencies": {"express": "4.16.3"} // Servidor Express
+
+- No Package.json - "dependencies": {"multer": "1.3.0"} // Para fazer o upload 
+
+- No Package.json - "devDependencies": {"nodemon": "1.17.3"} // Depedência de desenvolvimento (nodemon fica monitorando os arquivos sempre que ouver uma mudança, restartando o servidor)
+
+- No terminal npm i // Para instalar as depedências.
+
+- Depois criar um novo arquivo na mesma pasta chamado Server.JS. Ele será responsável por ter o servidor tanto para prover os dados estáticos como também para ter alguns serviços.
+
+----- Sever.JS ------
+
+- const BodyParser = require('body-parser') // Importando. Responsável por fazer o parser do body da requisição(quando fizer um request e se for mandado dados nesse request ele vai interpretar os dados e deixa-los prontos para 
+serem manipulados)
+
+- const express = require('express') // Importando o servidor.
+
+- const app = express() // Instanciando o servidor colocando dentro de uma variável.
+
+- Middleware - É uma função que sera executada quando uma determinada requisição chegar. serão aplicados sempre que acontecer uma requisição. Poder um Middleware aplicado a um determinado padrão de url
+ou pode ser aplicada a todas as requisições que chegarem no servidor
+
+- app.use(express.static('.')) // Middleware - Dizendo que dentro da pasta atual onde o arquivo Server.Js está sirva os arquivos estáticos(pegando todos os arquivos) 
+
+- app.use(bodyParser.urlencoded({extended: true})) // Middleware - Se vinher algum formato apartir de uma "Submit" de um formulário ele vai ler os dados e transformar em objeto
+
+- app.use(bodyParser.json()) // Middleware - Se vinher um JSON dentro do body da requisição esse código será aplicado para transformar o JSON em objeto
+
+- app.get('/teste', {}) // Middleware - Quando vinher uma requisição do tipo GET com a URL "/teste" chama essa função que vai retornar um ok.
+
+- app.listen(8080, () => console.log('Executando...')) // Estartar o servidor
+
+- npm start - iniciar Servidor
+
+----------- Body-Parser ---------------
+
+- Oque ele faz? 
+
+uma requisição HTTP pode vir com o seu corpo em diferentes formatos, como em form-data, x-www-form-urlenconded... O que o body parser faz é adequar para que você consiga ler o body da requisição como objeto. Ficou claro?
+
+
+
+- 

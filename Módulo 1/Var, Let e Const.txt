@@ -1,0 +1,41 @@
+-------------- Var, Let e Const ------------
+
+- Espaço ocupado em memória.
+
+- Escopo - Local onde a variável é visivel(até onde ela é acessivel).
+
+- Variáveis tem 2 - escopos Global ou De Função. 
+
+- Variáveis definidas dentro de uma função o escopo dela é apenas dentro da função.
+
+- Fuja do escopo global, porque quando vc cria uma variável global existe a possibilidade de ser sobreescrita.
+
+---------- Var Vs Let ------------
+
+- Variáveis muito parecidas, podendo colocar valores,modificar valores.
+
+- A diferença entre eles é o scopo.
+
+- O Var é uma variável de escopo global,funciona em qualquer lugar do programa.
+
+- O Let não é uma variável global, ele só funciona dentro do bloco onde foi declarado/criado.
+
+Ex: if(true){					Ex: if(true){
+	var = 10;//Escopo global                        let = 10;//Escopo global
+								console.log(a)//Certo
+	}						}
+
+	console.log(a);					console.log(a);//errado
+	resultado: 10					resultado: Sem resultado
+
+----------- Const -------------
+
+- Variável que não tem escopo global.
+
+- Não pode reatribuir um valor já definido a constante.
+
+- Porém o valor dentro da constante pode SIM ser modificado:
+Ex: const a = {nome="warlei"}//objeto
+    a.nome="josé" // Podendo modificar um valor já atribuido através de sua "Propriedade(a)"
+
+- Possivel apenas em Arrays,Objetos,Dicionários. Qualquer tipo que tenha propriedades dentro.

@@ -1,0 +1,7 @@
+--------------- Variáveis Compostas -----------------
+
+ - Array - Variáveis compostas conseguem armazenar vários valores em uma mesma estrutura.
+
+- Um Array é uma variável que tem vários elementos,cada elemento é composto por seru valor e uam chave de identificação.
+
+- Todo Array em JS é um Object

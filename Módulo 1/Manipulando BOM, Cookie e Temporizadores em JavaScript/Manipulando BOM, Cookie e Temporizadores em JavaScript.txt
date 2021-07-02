@@ -1,0 +1,118 @@
+----------------- Manipulando BOM, Cookie e Temporizadores em JavaScript -----------------
+
+- BOM - modelo de objeto do navegador. É a partir dele que as páginas, o histórico, os menus e demais elementos ou funções presentes no navegador serão acessíveis.
+
+- Não há um padrão para essa implementação do BOM, mas existem muitos objetos em comum no BOM entre os navegadores.
+
+- Os objetos podem incluir desde temporizadores até lista de quadros da página, ou, ainda, o histórico do navegador.
+
+- O browser object model está no topo da hierarquia de objetos, e tem acesso a características próprias do navegador e da mágina que o utiliza.
+
+- O núcleo de uma implementação em JavaScript para navegadores observa o padrão ECMAScript.
+
+- O BOM é um objeto que abrange os elementos não pertencentes à página em si, como: janela, histórico, barra de endereço, barra de status e tantos outros. 
+
+- Assim como qualquer outro objeto o BOM é um conjunto de chaves e valores que representa as propriedade e os métodos do navegador.
+
+- Na maioria dos navegadores, o BOM é acessível por meio de objeto denominado "window".
+
+- O windows pode ser referenciado pela palavra "this" que, em outras implementações, costuma referir-se ao objeto global,l, como era o caso do interpretador Node.js.
+
+- Assim todos elementos globais, sejam objetos, variáveis ou funções, são filhos do objeto global window e podem ser acessados diretamente pelo seu nome.
+
+- O BOM e o objeto window não são idênticos,mas, em geral, o window o costuma ser a principal implementação utilizada nos navegadores que utilizam esse conceito.
+
+- O objeto modelo do navegador é o ponto de partida de um sistema Web para a linguagem JavaScript. Qualquer declaração de variável, objeto ou função será um elemento novo e inferior nessa hierarquia
+
+
+
+------------------ Objetos do BOM -----------------------
+
+- Diretamente ligados ao objeto windows, existem propriedades e métodos de manipulação da janela em si.
+
+- O tamanho é  a posição da janela e seu documento podem ser controlados por meio de funções de:
+
+* Redimensionamento absoluto (resizeTo) ou relativo (resizeBy) - Para modificar largura e altura da janela, movendo o ponto da extremidade inferior direita.
+
+* mudanças de posição absoluta (moveTo) ou relativa (moveBy) - a partir do ponto referente à extremidade superior esquerda da janela;
+
+* rolagem de página absoluta (scrollTo) ou relativa (scrollBy) - para alterar a posição em que uma página maior que a tela é exibida.
+
+* gerador de mensagens de alerta simples (alert) - informando uma string a ser exibida em conjunto com um botão de finalização;
+
+* mensagens de confirmação (confirm) - contendo botão de confirmação, que retornará true, e de cancelamento, que retornará false;
+
+* nova janela de diálogo para receber valores do usuário (prompt) 
+
+* abertura de novas janelas ou abas (open) - a depender de como o interpretador implementou a função, normalmente informando características como página, dimensões, entre outros;
+
+* fechamento da janela atual (close).
+
+- Outras funções comuns incluem, ainda, controle de foco, utilizando focus para direcioná-lo à janela, e blur, para tirá-lo da janela atual, além de interrupção de carregamento de página (stop).
+
+------------------ Principais Objetos do BOM -----------------
+
+- Document - Retorna o objeto que armazena o documento da página.
+
+- Frames - Retorna todos os quadros (<iframe>) da janela
+
+- History - Retorna o objeto que armazena o histórico.
+
+- Screen - Retorna o objeto referente à tela da janela.
+
+- Navigator - Retorna o objeto que contém o navegador
+
+- Location - Retorna a localização da janela
+
+- Cada um desses objetos apresentados expõe uma parte do navegador ou da página atual e apresenta suas próprias funções e propriedades.
+
+---------- Objeto document
+
+- contém a página HTML carregada pela janela do navegador,sendo ela o foco principal não apenas do programador, mas do usuário. por meio do DOM que se pode acessar e modificar o conteúdo da página
+que está sendo exibida pelo navegador.
+
+- o DOM apresenta métodos e propriedades próprios. A sua estrutura organiza os elementos de uma página por categorias, facilitando encontrar imagens ou formulários presentes, por exemplo.
+
+--------- Objeto frames
+
+- Ele lista todos os quadros existentes no objeto window na forma de um "ARray" de objetos. Assim, cada um dos quadros é acessado por meio de um
+índice, ordenado na ordem em que aparecem cada um dos quadros.
+
+- Os quadros correspondem às tags <frame> e <iframe> do padrão HTML. Porém, com o novo padrão HTML5, os elementos <frame> deixaram de existir, mantendo apenas os <iframe>.
+
+-------- Objeto history
+
+- mantém o histórico de páginas acessadas pela janela, sendo possível:
+
+* retornar às páginas anteriores por meio da função back();
+
+* avançar para páginas mais recentes no histórico, com a função forward();
+
+* carregar novas páginas a partir de um endereço uniform resource locator (URL, que em português significa “localizador uniforme de recursos”) — com a função go();
+
+* retornar a quantidade de páginas já acessadas por meio da propriedade length.
+
+
+--------- Objeto screen
+
+- Este armazena informações referentes a tela do usuário que visualiza a página como:  quantidade de pixels em altura (availHeight) e largura (availWidth) disponíveis, excluindo a barra de tarefas do sistema operacional;
+resolução de cores utilizada (pixelDepth e colorDepth); altura (height) e largura (width) totais da tela.
+
+--------- Objeto navigator
+
+- e contém informações e métodos referentes ao navegador, dados sobre o aplicativo: nome (appName), versão (appVersion), plataforma (platform) e nome do motor utilizado pelo aplicativo (product).
+permissão para armazenar cookies (cookieEnabled); localização geográfica do usuário (geoLocation); idioma utilizado (language); e se o navegador está on-line (onLine).
+
+- cabeçalho de informações sobre o usuário do navegador, que é enviado para o servidor (userAgent).
+
+---------- Objeto location
+
+- Constam unformações quanto ao nome do servidor, ao protocolo, à porta e ao endereço da página que estão sendo acessados na janela.
+
+- retornados pelas propriedades: origin, com protocolo, nome e porta; host, retorna nome e porta; hostname, apenas o nome; protocol,
+
+- apenas o protocolo; port, apenas a porta; pathname, apenas o caminho que precede o arquivo do endereço; href, o endereço completo; hash, retorna os valores ancorados após o endereço, simbolizados
+pelo prefixo “#”; e search,que retorna os parâmetros de consulta inseridos após o endereço, simbolizados pelo prefixo “?”
+
+
+

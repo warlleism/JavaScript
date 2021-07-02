@@ -1,0 +1,7 @@
+--------------- Tipagem no JavaScript -----------------
+
+- JS é uma linguagem de tipagem dinâminca (fracamente tipada)
+
+- linguagens fracamente tipadas não significa que elas não tem um tipo, Mas que suas variáveis podem ser a cada hora de um tipo diferente.
+
+ 

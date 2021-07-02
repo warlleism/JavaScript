@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de números</title>
+    <style>
+        body {
+            background-color: rgb(177, 130, 221);
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var n1 = 1545.5;
+        document.writeln(`Normal = ${n1}<br>`);
+        document.writeln(`Com 2 casas após o ponto = ${n1.toFixed(2)}<br>`);// Com 2 casas após o ponto ( . )
+        document.writeln(`Trocando pomto ( . ) por virgula = ${n1.toFixed(2).replace('.', ',')}<br>`); // Trocando ponto ( . ) por virgula ( , )
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})}<br>`) // Aparecer número com formatação brasileira/localizada
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency' , currency: 'USD'})}<br>`) // Aparecer número com formatação Dolar/localizada
+        document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency' , currency: 'EUR'})}<br>`) // Aparecer número com formatação Euro/localizada
+    </script>
+</body>
+
+</html>

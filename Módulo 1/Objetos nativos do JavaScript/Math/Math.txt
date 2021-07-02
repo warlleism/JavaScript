@@ -1,0 +1,20 @@
+--------- MATH ------------
+
+- Matemática
+
+- Objeto do javaScript que permite executar tarefas matemáticas em números
+
+- Métodos do Math:
+
+- Math.round(x) - Retorna o valor de x arredondado
+- Math.abs(x) - Retorna o valor positivo de x
+- Math.sqrt(x) - Retorna o raiz quadrada de x
+- Math.ceil (x) -Retorna o x arrendodando para cima
+- Math.floor(x) -Retorna o x arrendodando para baixo
+- Math.cos (x) - Retorna o cosseno ( um valor entre -1 e 1 ) do ângulo x (dado em radianos)
+- Math.sin (x) - Retorna o seno ( um valor entre -1 e1 ) do ângulo x (dado em radianos)
+- Math.PI - Retorna a razão entre a circunferência de um círculo e seu diâmetro
+- Math.random(x) -Retorna um número aleatório entre 0 e 1
+- Math.pow(x,y) - Retorna o valor de x à potência de y
+- Math.min(56,3,-97,02,0,17) - Pode ser utilizado para encontrar o valor mais baixo, ou seja -97
+- Math.max(5,-9,8,50,0,348) - Pode ser utilizado para encontrar o valor mais alto. ou seja 348

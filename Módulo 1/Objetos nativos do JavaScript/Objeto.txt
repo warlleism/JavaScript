@@ -1,0 +1,46 @@
+-------------  Objetos  --------------
+
+- Objetos - é um outro tipo de valor como array,string,number,function
+
+- Objeto é um valor que permite armazenar uma coleção de pares e chaves de valor
+
+- Pares e Chaves - São variáveis dentro de uma variável.
+
+- var usuario = {chave:valor} - declarando um objeto {}
+
+- Como chave valor do objeto pode-se passar como valor Array,Function,outros Objetos
+
+- {} = objeto // [] = Array
+
+- Com valor de uma chave em um objeto, pode-se passar uma variável. Se o nome da propriedade no objeto é o mesmo nome da variável que você quer passar,basta escrever o nome da variável sem o valor
+
+---------- Object.assingn --------------
+
+- Marge de dois ou mais objetos com Object.assingn:
+
+* Transformar objetos separados em 1 só (marge)
+
+* Object.assingn - aceita 2 ou mais objetos
+
+Ex:    var usuario = {
+            nome: 'Warllei',
+            idade: 25
+        };
+
+        var InformacoesExtras = {
+            pais: 'Brasil',
+            estado: 'ES'
+        };
+
+       Var novoUsuario = Object.assign({} , usuario, InformacoesExtras) - Criando um objeto VAZIO com = {} //Sempre gerar um novo objeto
+
+--------------- Spread -----------------
+
+- Forma mais curta de fazer Marge
+
+- Juntando objetos com spread ( ... )
+
+        var novoUsuario2 = {
+            ...usuario, (spread = espalhando as propriedade do usuario para dentro do novoUsuario 2 )
+            ...InformacoesExtras (spread = espalhando as propriedade do InformacoesExtras para dentro do novoUsuario 2 )
+        };

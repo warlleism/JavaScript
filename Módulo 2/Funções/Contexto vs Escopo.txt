@@ -1,0 +1,36 @@
+---------------- Escopo Vs Contexto ----------------------
+
+* Escopo - Acesso as variáveis, funções e objetos numa parte do código. durante o tempo de execução.
+
+- Determina a visibilidade desses recursos em alguma parte do código.
+
+- Sempre que ivocamos numa função, estamos crando um novo scope
+
+- 1 - Global - no momento que começamos a escrever o código, estamos nesse contexto. Existe enquanto existir a aplicação.
+
+- 2 - Local - Dentro de alguma função,variável estão no escopo (contexto) local. Existe enquanto existir a função ou objeto.
+
+------------- Modo Estrito (strict mode) --------------------
+
+- Muda a semâtica do javascript
+
+- "use strict" para habilitar no contexto
+
+- Elimina alguns erros silênciosos
+
+- Evita algumas confusões
+
+- Proíbe algumas sintaxes
+
+
+
+
+
+
+* Contexto - Enquanto o scope se refere as diversas variáveis, o context se refere ao valor do this no mesmo scope.
+
+- pode ser mudado com funções especiais como .apply() , .call() e .Bind()
+
+- no contexto de execução 'execution context' o contexto já não é mais esse contexto que estamos discutindo. ele será o scope
+
+- Contexto de execução = Scope/escopo

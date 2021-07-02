@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: rgb(102, 152, 228);
+}
+
+form{
+    background-color: rgba(0, 0, 255, 0.678);
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    margin: auto;
+    margin-top: 60px;
+}
+.cont{
+    text-align: center;
+}
+
+div{
+    padding: 20px;
+}
+
+div > input, textarea{
+width: 90%;
+padding: 10px;
+border-radius: 7px;
+font-size: 20px;
+color: black;
+}
+
+input:focus{
+    background-color: rgb(208 226 255);
+}
+
+textarea:focus{
+    background-color: rgb(208 226 255);
+}
+
+
+button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10px;
+    border: none;
+}

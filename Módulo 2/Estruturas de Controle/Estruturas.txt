@@ -1,0 +1,7 @@
+------------- Tipos De Estruturas ----------
+
+- Sequêncial - São blocos que são executados um após o outro sem desvio.
+
+- Condicional - Testes lógicos que dão 2 ou mais desvios.
+
+- Repetição/laços - Códigos podem ser executados várias vezes.

@@ -1,0 +1,17 @@
+------------ Arrow Functions vs Functions --------------
+
+- Arrow Functions são sempre funções anônimas muito usadas como funções de callBack.
+
+- Usam o this de maneira diferente.
+
+- Não é preciso usar a palavra chave function
+
+- Como são funções anônimas é necessário atribui-las a uma variável ou constante
+
+- Em caso de função com apenas 1 instrução tudo depois da => (fat arrow) é assumido como retorno, não sendo necessário o Return nem chaves {}
+
+- Quando se tem apenas 1 parâmetro na função o parentese pode ser omitido.
+
+- Caso não haja parâmetros se coloca o parenteses vazio
+
+- Arrow Functions redefinem como o this é tratado dentro da função. Arrow Functions não tem seu próprio this

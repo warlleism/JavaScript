@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(0, 153, 255);
+}
+
+header {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    padding: 30px;
+}
+
+section {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    box-shadow: black 2px 2px 8px;
+    border-radius: 10px;
+}
+
+section>div>p {
+    font-size: 20px;
+    padding: 10px;
+}
+
+section>div>p>input {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+input:focus {
+    background-color: rgb(219, 238, 247);
+}
+
+input:invalid {
+    background-color: rgb(247, 225, 225);
+}
+
+input:valid {
+    background-color: rgb(227, 248, 214);
+}
+
+#resultado {
+    font-size: 20px;
+    padding: 10px;
+}

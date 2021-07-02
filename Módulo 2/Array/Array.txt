@@ -1,0 +1,15 @@
+------------- Array --------------
+
+
+
+- Array em Javacript é um objeto. Ele é um objeto especial com caracteristicas próprias.
+
+- Não existe array nativo no JS e sim ele é um objeto, só que inves de organizar seus atributos apartir de chaver, ele organiza os dados apartir de um index.(Indexado)
+
+- Comporta diferentes tipos de dados em um mesmo array.
+
+- é uma boa prática trabalhar com dados homogenios( de tipos iguais )
+
+- Estrutura dinâmica.
+
+- Se tiver um array constante não significa obrigatoriamente que os dados do array são constantes. A variável aponta para um endereço de merória que não pode ser modificado,mas os elementos do array podem ser alterados,adicionados e excluidos.

@@ -1,0 +1,45 @@
+------------ Comportamento com JavaScript ---------------
+
+- EchimaScript - é o nome oficial do JavaScript
+
+- O JavaScript tem a função de controlar os comportamentos da página, permitindo validar formulários, alterar textos, animar, ocultar e mostrar objetos, alterar estilos e executar pequenas operações e manipulações junto ao navegador. 
+
+- O JavaScript tem a função de controlar o comportamento da página, permitindo, por exemplo, validar formulários, alterar textos, ocultar e mostrar objetos, alterar estilos, executar pequenas operações e manipulações 
+junto ao navegador.
+
+
+
+--------------- Introdução ----------------
+
+- client side (lado cliente) - As linguagens do lado cliente vistas até o momento (HTML, CSS e agora o JavaScript) são aquelas executadas utilizando apenas o navegador do computador do usuário. 
+
+- server side ( lado servidor) - linguagem que vai rodar "por trás dos panos", fornecendo a lógica principal da aplicação. 
+
+- JavaScript é uma das linguagens mais populares da Web e se caracteriza por ter tipagem dinâmica, por ser baseada em objetos, orientada a eventos (p.ex., movimentos do mouse, pressionar botão, arrastar e soltar, etc.) 
+e realizar avaliação em tempo de execução.
+
+----------------- Criação dos primeiros códigos ------------------
+
+function soma(){
+ var numero1 = 2;
+ var numero2 = 5;
+ var soma = 0;
+ soma = numero1 + numero2;
+ return soma;
+}
+
+- Geralmente, os códigos desenvolvidos em JavaScript são organizados dessa forma, em pequenas funções, as quais serão chamadas por eventos nos elementos da página HTML.
+
+function mostraSituacao(media){
+ if(media >= 7){
+ alert("Aprovado");
+ }
+ else{
+ alert("Reprovado");
+ }
+}
+
+- Geralmente scripts são colocados no fim do body para que os scripts sejam carregados depois do código base.
+
+
+

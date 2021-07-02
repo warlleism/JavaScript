@@ -1,0 +1,3 @@
+----------- Call & Apply --------------
+
+- A diferença entre o call e o apply é a diferença é a forma como vc passa os parâmetros na hora de invocar as funções

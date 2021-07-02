@@ -1,0 +1,13 @@
+var contador = 1
+
+while(contador < 11){ //Estrutura de repetição com teste lógico no início
+    console.log(`Esse programa girou ${contador} vez`)
+    contador++ //Encremento
+}
+
+var contador2 = 1.
+
+do{
+    console.log(`Esse programa girou ${contador} vez`)
+    contador++ 
+}while(contador2 < 11)

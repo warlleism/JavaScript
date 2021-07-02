@@ -1,0 +1,114 @@
+---------------- Number Métodos e Propriedades ---------------------
+
+- O toString() Método
+toString() retorna um número como uma string.
+
+Todos os métodos numéricos podem ser utilizados em qualquer tipo de números (literais, variáveis, ou expressões):
+
+Exemplo
+var x = 123;
+x.toString();            // returns 123 from variable x
+(123).toString();        // returns 123 from literal 123
+(100 + 23).toString();   // returns 123 from expression 100 + 23
+
+
+----------------------------------------------------------------------------------------------------------
+
+- O toExponential() Método
+toExponential() retorna uma string, com um número arredondado e escrito usando a notação exponencial.
+
+Um parâmetro define o número de caracteres por trás do ponto decimal:
+
+Exemplo
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+
+----------------------------------------------------------------------------------------------
+
+- O toFixed() Método
+toFixed() retorna uma string, com o número escrito com um número especificado de casas decimais:
+
+Exemplo
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+
+
+----------------------------------------------------------------------------
+
+- O toPrecision() Método
+toPrecision() retorna uma string, com um número escrito com um comprimento especificado:
+
+Exemplo
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+
+--------------------------------------------------------------------------
+
+- O valueOf() Método
+valueOf() retorna um número como um número.
+
+Exemplo
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 + 23
+
+---------------------------------------------------------------------------------------------------
+
+- A Number() Método
+Number() pode ser usado para converter variáveis JavaScript aos números:
+
+Exemplo
+x = true;
+Number(x);        // returns 1
+x = false;     
+Number(x);        // returns 0
+x = new Date();
+Number(x);        // returns 1404568027739
+x = "10"
+Number(x);        // returns 10
+x = "10 20"
+Number(x);        // returns NaN
+
+------------------------------------------------------------------------------
+
+- O parseInt() Método
+parseInt() analisa uma cadeia e retorna um número inteiro. Espaços são permitidos. Apenas o primeiro número é retornado:
+
+Exemplo
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+--------------------------------------------------------------------------------
+
+- O parseFloat() Método
+parseFloat() analisa uma cadeia e retorna um número. Espaços são permitidos. Apenas o primeiro número é retornado:
+
+Exemplo
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+
+---------------------------------------------------------------------------
+
+- Number Propriedades
+
+Propriedade	    Descrição
+MAX_VALUE	    Retorna o maior número possível em JavaScript
+MIN_VALUE	    Retorna o menor número possível em JavaScript
+NEGATIVE_INFINIT    Representa o infinito negativo (devolvido na overflow)
+NaN	            Representa um valor "Not-a-Number"
+POSITIVE_INFINITY	Representa o infinito (devolvido na overflow)

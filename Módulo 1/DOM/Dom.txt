@@ -1,0 +1,30 @@
+---------- Dom (Document Object Model)  ------------
+
+- Conjunto de objetos dentro dos navegadores que dão acesso aos componentes internos dos WebSite.
+
+- Àrvore DOM:
+
+- Raíz = objeto Window
+
+- Elementos a cima são parent/pai/mãe dos elementos abaixo
+
+- Os elementos a baixo são elementos filhos
+
+---- Selecionando Elementos
+
+- Por marca/Tag
+
+- Por ID
+
+- Por nome
+
+- Por classe
+
+- por Seletor = querySelector() / querySelectorAll()
+
+
+------- InnerTEXT vs InnerHTML:
+
+- InnerHTML - Caso o elemento no documento HTML tenha formatação (em texto por Ex <strong>) o InnerHTML trás consigo essa formatação. já o InnerTEXT não.(se não tiver formatação não aparece)
+
+- InnerTEXT - Textos sem formatação

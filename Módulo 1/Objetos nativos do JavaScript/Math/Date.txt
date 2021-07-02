@@ -1,0 +1,59 @@
+-------------------- Date -----------------------
+
+- Data e Hora
+
+- Métodos Get - Usados para obter informações
+
+- Métodos Set - Usados para alterar informações
+
+------- Manipulando o Date
+
+- Deve-se criar um objeto do tipo date
+Ex: var date = new date()
+
+- window.document.write(Date());//impressão da data completa
+
+- var data = new Date();//objeto do tipo date
+
+- Métodos do Date:
+
+- getDay() - Retorna o dia da semana, domingo = 0, segunda = 1 - notação de vetor
+
+- getDate() - Retorna o dia do mês 							 
+
+- getMonth() - Retorna o mês, janeiro = 0, fevereiro = 1 - notação de vetor
+
+- getFullYear() - Retorna o ano com 4 dígitos, ex:2015
+
+- getHours() - Retorna a hora
+
+- getMinutes() - Retorna os minutos
+
+- getSeconds() - Retorna os segundos
+
+- toDateString() - Retorna a data com padrão do EUA
+
+- toLocaleDateString() - retorna a data no formato 16/12/2015
+
+- toLocaleString() - retorna a data e hora 16/12/2015 23:13:00
+
+
+
+- Método Set (Serve para modificar médotodos/ Incrementar por exemplo)
+
+- Basta criar um novo objeto - var data = new Date();
+
+- data.setDate(dt.getDate() + 2) - chamar o objeto com o "setDate(passando o objeto modificado. e o metodo a ser modificado() com o + incremento) 
+
+Ex: 
+	var data = new Date()
+	data.setDate(dt.getDate() + 2)
+
+
+- Serve para todos os métodos "get". Basta substituir get por set:
+
+Ex: setDate() 
+
+    setHours()
+
+    setMinutes()

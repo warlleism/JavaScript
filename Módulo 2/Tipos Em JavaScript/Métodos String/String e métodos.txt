@@ -1,0 +1,112 @@
+----------- String ----------
+
+- Strings são cadeias de caracteres.
+
+- No JS elas podem ser delimitadas por 3 simbolos ( " ", ' ', ` ` )
+
+------------- Métodos ------------------
+
+- Métodos charAt e charCodeAt.
+
+O método charAt server para retornar um caractere de uma string pelo seu índice e o método charCodeAt retorna o mesmo caractere só que em formato da tabela unicode .
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.charAt(0);//Retorna O
+var result2 = str.charCodeAt(0);//Retorna 79
+
+
+
+
+
+- Métodos indexOf e lastIndexOf.
+Tanto o método indexOf quanto o lastIndexOf retornam a primeira posição de um determinado pedaço dentro de uma string, porem o indexOf retorna a primeira ocorrência e o lastIndexOf retorna a ultima.
+Ele pega o index da primeira letra da palavra na posição
+
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var first = str.indexOf("Mundo");//Retorna 4
+var last = str.lastIndexOf("Mundo");//Retorna 24
+
+
+
+
+
+- Método slice.
+O método slice extrai uma parte de uma string e retorna a parte extraída em uma nova string.
+
+O método tem dois parâmetros: o índice inicial (posição), e o índice final (posição).
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.slice(4,13);//Retorna Mundo Olá
+Podemos passar indices negativos como parâmetro, e ele começará a contar do fim para o começo da string.
+
+
+
+
+
+- Método substring.
+É similar ao slice, porem não aceita números negativos. 
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.substring(3, 9); //Retorna Mundo
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result2 = str.substring(3); //Retorna Mundo Olá Mundo Olá Mundo //Vai pegar todos após o índice 3
+
+
+
+
+
+- Método concat.
+O método concat agrupa 2 ou mais strings.
+
+var a = "Olá";
+var b = "Mundo";
+var c = "do";
+var d = "JavaScript";
+var e = a.concat(" ",b, " ", c, " ",d );//Retorna Olá Mundo do JavaScript
+
+
+
+
+
+- Método replace.
+O método replace substitui um determinado valor em uma string por outro valor.
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.replace("Mundo","Bauru");//Olá Bauru Olá Mundo Olá Mundo 
+
+Perceba que o replace não substituiu todas as ocorrências de “Mundo”, mas somente a primeira.
+
+
+
+
+
+- Método split.
+É possível converter uma string em array usando o método split.
+
+var str = 'Olá,mundo,do,JavaScript'
+var arr = str.split(',') //Retorna [ 'Olá', 'mundo', 'do', 'JavaScript' ] // Retorna uma separação com elementos indepedente
+
+
+
+
+
+- Métodos toUpperCase e toLowerCase.
+O método toUpperCase transforma toda a string em maiúscula e o método toLowerCase transforma toda a string e minúscula.
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.toUpperCase();//OLÁ MUNDO OLÁ MUNDO OLÁ MUNDO 
+var result2 = str.toLowerCase();//olá mundo olá mundo olá mundo 
+
+
+
+
+- Método search.
+O método search é exatamente igual ao método indexOf, retorna a primeira ocorrência de um determinado pedaço de em uma string.
+
+var str = "Olá Mundo Olá Mundo Olá Mundo ";
+var result = str.search("Mundo");//Retorna 4
+
+
+

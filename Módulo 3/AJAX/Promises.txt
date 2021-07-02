@@ -1,0 +1,25 @@
+-------------- Promises -------------
+
+- Promise é um objeto usado para processamento assíncrono. 
+
+- Sicrono - A sequência em que vc executa os comandos é sempre em sequência diferente do Assícrono.
+
+- Para trabalhar com js de forma assícrona, onde sequência em que vc executa pode variar.
+
+- A promisse deixa excecutar 2 parte do script de forma simutânea.
+
+- promisse é um objeto que é passado como parâmetro para ela é outra função anônima - let p = new Promise( () => ) //  Promise( (resolve , reject) 
+
+- Função anônima que recebe 2 callbacks
+
+- Status do promisse:
+
+* pending (pendente): Estado inicial, que não foi realizada nem rejeitada.(ainda puxando do servidor) 
+
+* fulfilled (realizada): sucesso na operação.
+
+* rejected (rejeitado):  falha na operação.
+
+
+ 
+

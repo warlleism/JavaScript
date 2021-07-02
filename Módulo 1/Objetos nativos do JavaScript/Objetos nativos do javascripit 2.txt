@@ -1,0 +1,218 @@
+---------------- Objetos nativos do JavaScript --------------
+
+---------- Objetos de números e datas --------------
+
+- Nesta categoria, constam três objetos: Number, Math e Date.
+
+- o Number - engloba todos os tipos numéricos e contém propriedades que delimitam valores de intervalor, máximo, mínimo, infinito positivo e negativo.
+
+- Math - abrange funções e propriedades recorrentes em operações matemáticas, como logaritmo, exponencial, funções trigonométricas, além de constantes, como o número pi e número de Euler.
+
+- Date representa um instante de tempo em milissegundos, mas com propriedades e métodos que convertem, apresentam e facilitam operações entre datas e tempos
+
+---------------- Objetos de processamento de texto -------------------
+
+- Objetos String e RegExp.
+
+- String - O primeiro elenca propriedades e métodos para manipular cadeias de caracteres, que podem ser acessados diretamente a partir de um tipo primitivo string, já que o JavaScript converte a variável em um objet
+
+- RegExp (e regular expression) - , é utilizado para representar e buscar padrões textuais em uma cadeia de caracteres, a fim de identificar elementos ou partes específicas de um texto.
+
+------------------ Objetos de coleção ----------------
+
+- Dados podem ser agrupados e ordenados por um índice na forma de vetores, conhecidos pelo termo Array.
+
+- Map — varre uma coleção retornando um Array com chave e valor; 
+
+- Set — similar ao Map, mas com valores únicos resultantes da iteração;
+
+- WeakMap — o mesmo que um Map fracamente referenciado e não enumerável;
+
+- WeakSet — referência apenas objetos, enquanto o Set é capaz de utilizar valores de qualquer tipo.
+
+--------------- Objetos de dados estruturados --------------------
+
+- Inclui os objetos ArrayBuffer, DataView e JSON, utilizados na troca de informações entre sistemas.
+
+- ArrayBuffer - tem tamanho fixo e estrutura de dados binária
+
+- DataView - funciona como um intérprete desse Array, tanto no procedimento de leitura quanto de escrita.
+
+- JSON - é um objeto de comunicação no formato textual, similar à descrição literal de um objeto, mas apresentado em uma String 
+
+------------ Objetos de controle de abstrações ---------------
+
+- Promise e Generators são objetos que permitem o controle de fluxo assíncrono e habilitam operações com iterações infinitas ou processamento de dados paralelamente às demais instruções.
+
+-------------- Objetos de reflexão ----------------
+
+- Objetos utilizados para criar armadilhas e capturar determinados eventos em outros objetos.
+
+- Proxy - é construído para monitorar objetos em específico.
+
+- Reflect - não tem construtor e serve para retornar informações a respeito do próprio código, como consulta às propriedades e aos protótipos de um determinado objeto
+
+---------------- Aplicação de objetos nativos em códigos JavaScript --------------------
+
+--- Math ---
+
+- É um objeto estático, logo, não possui construtor.
+
+- Há duas formas básicas de se utilizar o objeto:
+
+* Math.constante, em que a palavra “constante” deverá ser substituída por um identificador válido existente no objeto (PI, E, LN10, ...)
+
+* Math.função(), substituindo a palavra “função” pelo nome de uma função válida (abs(), ceil(), etc.)
+
+* Math.random() - gerar números pseudoaleatórios entre 0 e 1
+
+Ex: 
+	let r = 2
+	let area = Math.PI * Math.pow(r, 2) // area = π.r² ( pow = exponenciação - r2)
+
+- Funções trigonométricas: seno, cosseno, tangente, tangente hiperbólica e seus inversos, utilizadas conforme o exemplo:
+
+	let cos _ x = Math.cos(x)
+
+	let sen _ x = Math.sin(x)
+
+	let tan _ x = Math.tan(x)
+
+	let arc _ cos _ x = Math.acos(x)
+
+	let arc _ sen _ x = Math.asin(x)
+
+	let arc _ tan _ x = Math.atan(x)
+
+- Outras funções incluem truncamento e arredondamento de valores e obtenção de máximos e mínimos de um conjunto de números:
+
+	let trun _ x = Math.trunc(x) // somente parte inteira de x
+	let abs _ x = Math.abs(x) // |x|
+
+	let ceil _ x = Math.ceil(x) // número inteiro superior mais próximo
+
+	let fl _ x = Math.floor(x) // número inteiro inferior mais próximo
+
+	let rnd _ x = Math.round(x) // arredonda para o inteiro mais próximo
+
+	let max _ x = Math.max(x) // maior número dentro da coleção
+
+	let min _ y = Math.min(y) // menor número dentro da coleção
+
+
+--- Date ---
+
+- Auxilia na manipulação de datas e intervalos de tempo.
+
+- O Objeto Date apresenta método construtor.
+
+- New - pode-se instanciar um novo objeto a partir da palavra reservada new.
+
+- Se utilizado sem argumentos, o objeto é instanciado com os valores de data e hora atuais do sistema
+
+- Já um parâmetro do tipo string pode especificar ano, mês, dia, hora, minutos, segundos e milissegundos, desde que utilizando um padrão de representação aceitável pelo objeto e seu método de conversão Date.parse().
+
+- Pode-se invocar o construtor, utilizando mais de um valor numérico e informando, pelo menos, os valores de ano e mês, sendo os demais opcionais:
+
+* new Date(ano, mês, dia, hora, minuto, segundo, milissegundo).
+
+- Após instanciado, o objeto não pode ter seus valores alterados por meio de propriedades.
+
+	Date.getFullYear() // ano no formato de 4 dígitos do objeto
+
+	Date.getMonth() // mês do objeto
+
+	Date.getDate() // dia do mês do objeto
+
+	Date.getDay() // dia da semana do objeto
+
+	Date.getHours() // hora do objeto
+
+	Date.getMinutes() // minutos do objeto
+
+	Date.getSeconds() // segundos do objeto
+
+	Date.getMilisseconds() // milissegundos do objeto
+
+	Date.getTime() // milissegundos desde 01/01/1970
+
+	Date.getTimezoneOffset() // minutos entre hora local e UTC // não pode ser alterado
+
+
+
+------ métodos de conversão de valores para String ou JSON -----------
+
+	Date.toDateString() // formato textual da data local
+
+	Date.toUTCString() // formato textual da data em UTC
+
+	Date.toISOString() // padrão ISO-8601 da data/hora UTC
+
+	Date.toLocalDateString() // formatação local de data em texto
+
+	Date.toLocalString() // formatação local de data/hora em texto
+
+	Date.toLocalTimeString() // formatação local de horário em texto
+
+	Date.toString() // data/hora local em texto
+
+	Date.toTimeString() // hora local em texto
+
+	Date.valueOf() // objeto Date para milissegundos
+
+--- RegExp ----
+
+- Expressões regulares são utilizadas para localização de padrões textuais de forma a separar e identificar elementos específicos de um texto.
+
+- RegExp pode ser criado a partir do construtor do objeto, passando como parâmetros duas strings: uma informando o padrão de expressão regular e outra de atributos globais.
+
+- Ao objeto, estão associadas cinco propriedades:
+
+- Global - indicando que o índice de varredura da RegExp deverá ser cumulativo, permitindo executá-la várias vezes para encontrar cada situação em que o padrão se repete; 
+
+- ignoreCase - com valor false, para diferenciar entre maiúsculas e minúsculas;
+
+- lastIndex - armazena a posição do último caractere em conformidade com a expressão;
+
+- multiline, para varrer múltiplas linhas;
+
+-  source, armazena o texto da expressão;
+
+- exec() - método retornará um Array contendo os resultados da comparação
+
+- test() - determinará a existência ou não dos padrões com true e false
+
+
+--- metacaracteres com significados especiais: ---
+
+
+ [] // delimita uma classe de caracteres
+[^] // negação de uma classe de caracteres
+- // delimita um intervalo de caracteres
+\w // somente caracteres alfabéticos
+\W // somente caracteres não alfabéticos
+\s // espaço em branco
+\S // exceto espaços em branco
+\d // dígitos de 0 a 9
+\D // exceto dígitos de 0 a 9
+{n,m} // ocorrência anterior no mínimo n e no máximo m vezes
+{n,} // ocorrência anterior no mínimo n vezes ou mais
+{n} // ocorrência anterior exatamente n vezes
+? // ocorrência anterior nenhuma ou uma única vez
++ // mais de uma ocorrência anterior
+* // ao menos uma ocorrência anterior
+| // ou a expressão da esquerda ou da direita
+() // agrupar metacaracteres especiais
+(?:) // agrupa itens sem recordar dos caracteres do grupo
+^ // início de string
+$ // final de string
+(?=) // caracteres a seguir devem corresponder a expressão
+(?!) // caracteres a seguir não devem corresponder com a
+expressão
+
+
+
+
+
+
+

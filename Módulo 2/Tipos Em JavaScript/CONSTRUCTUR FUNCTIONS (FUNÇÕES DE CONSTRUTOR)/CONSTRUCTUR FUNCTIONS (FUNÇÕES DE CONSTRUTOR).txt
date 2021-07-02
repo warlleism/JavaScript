@@ -1,0 +1,5 @@
+---------------- CONSTRUCTUR FUNCTIONS (FUNÇÕES DE CONSTRUTOR) ----------------
+
+- Funções de construtor - Faz a mesma coisa que a função de fabrica.
+
+- A criação é feita através do "New" Criando um novo objeto na hr de instânciar.

@@ -1,0 +1,91 @@
+------------- Cookies ------------------
+
+- Propriedades do coockie
+
+- Window - Objeto:
+
+- Os cockies são inseridos através de atribuições simples ao objeto. Também a leitura utiliza apenas chamada da propriedade,retornando todos os cookies para aquela página(sem os atributos).
+
+- Path:
+
+- Este atributo determina os caminhos válidos para o cookie dentro de um mesmo endereço. especificando apenas "/" qualquer local um determinado website será válido.
+
+- Atributos:
+
+- Os atributos são definidos após o conjunto nome/valor a partir de um símbolo de ";"
+
+- Data/Hora UTC:
+
+- Formato padronizado de data e hora para representar a validade do cookie. Deve obedecer o padrão UTC (Tempo Universal Coordenado)
+
+- Expires:
+
+- Atributo utilizado para determinar uma data limite de exestência do cookie. Assim que a data for utrapassada, ele será imediatamento excluído
+
+- Nome:
+
+- O primeiro termo da string faz menção ao nome dado ao cookie. O nome é único para cada página. Cado dois sejam criados, o último sobreescreverá o primeiro.
+
+- Valor:
+
+- Após o primeiro sinal de igualdade, é definido o valor desejado ao cookie.
+
+- Max-age:
+
+- Assim como o Expires, tem a função de restringir a vida útil do cookie, mas especificamente somento o tempo em milissegundos a partir da data e hora em que foi criado. pode-se excluir um cookie atribuindo a um
+determinado nome o atributo mas-age=0.
+
+------------ Segurança ----------------
+
+- Secure - Estabelece uma conexão segura, requisito em endereços do tipo HTTPs(Hyper Text Transfer Protocol Secure).
+
+- HttpOnly - Quando configurado, este atriburo determina que somente o protocolo HTTP pode acessar esse cookie, oque impede que seja acessado pelo javaScript.
+
+- SameTime - Os cookies podem ser divididos em primários ou de terceiros. por motivos de segurança e fluxo de dados, nem sempre é interessante que os cookies sejam enviados em todos os casos.
+"Strict:" somente se o endereço do cookie coincidir com o do domínio.
+"Lax:" é enviado para terceiros também.
+
+------------------------ Cookies e temporizadores em JavaScript ---------------------
+
+- Funções de memoriação de dados por meio de cookies e temporização.
+
+- Cookies - são pequenos arquivos de texto utilizados para armazenar dados referentes à navegação do usuário em uma determinada página,para que,
+quando ele acesse novamente a página, algumas das informações já estejam disponíveis,possibilitando interações mais rápidas e carregamento mais eficiente.
+Para isso, utilizam-se de dados já armazenados no passado e que se sabe, mediante interação com o servidor, que não foram alterados. 
+
+- Esse recurso pode armazenar informações de login,como nome de usuário e senha.
+
+- Cada cookie é referenciado por um nome e está associado diretamente a um endereço de uma página específica, ficando armazenado no lado do cliente.
+
+- Também , podem ser acessados e manipulados pelo lado do servidor por meio do envio de dados do cookie entre as partes.
+
+- window.document.cookie. 
+
+	Ex: // cookies permitidos?
+	    if (window.navigator.cookieEnabled === true) - caso o navegador esteja configurado para permitir a criação de cookies (cookieEnabled), dois novos cookies são criados
+	{
+	    // cria um novo cookie de nome login
+	    window.document.cookie = 'login=alberto'
+	    // cria um novo cookie de nome pass
+	    window.document.cookie = 'pass=14bis'
+	}
+
+- O recurso permite, ainda, a especificação de alguns atributos, como o tempo de vida do cookie
+
+- por padrão, cookies duram apenas enquanto a mesma sessão do navegador existir.
+
+- expires - determina a data que, uma vez ultrapassada, excluirá automaticamente o cookie, como o caso no exemplo a seguir:
+
+// cookies permitidos?
+if (window.navigator.cookieEnabled === true)
+{
+ // data/hora atuais
+ Let hoje = new Date()
+ // data/hora mais 1 hora
+ Let expira = new Date(hoje.getTime() + 3600000)
+ // concatena o cookie e seu atributo "expire" com o
+valor de data/hora desejada
+ window.document.cookie = 'idioma=português; expires=' +
+ expira.toUTCString()
+}
+

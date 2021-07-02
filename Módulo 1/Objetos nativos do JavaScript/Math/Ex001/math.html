@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+    <style>
+        body{
+            background-color: rgb(204, 194, 214);
+            font-size: 60px;
+            color: rgb(41, 107, 230);
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1> Tipos de Objetos Math</h1>
+    <script>
+
+        //Calculo de Área
+
+        var raio = 5.6;
+        var area = Math.PI * Math.pow(raio, 2)
+        console.log(area)
+        window.document.write(`${area} <br>`)
+
+        //Retornar valor arredondado
+
+        var num1 = 25.5;
+        var arredon = Math.round(num1);
+        console.log(arredon)
+        window.document.write(`${arredon}<br>`)
+
+        //Retornar valor positivo
+
+        var num2 = -25;
+        var positivo = Math.abs(num2)
+        console.log(positivo)
+        window.document.write(`${positivo}<br>`)
+
+        //Retornar a raiz quadrada
+
+        var num3 = 9;
+        var raizQ = Math.sqrt(num3);
+        console.log(raizQ)
+        window.document.write(`${raizQ}<br>`)
+
+        //Retornar arredondadando para cima
+
+        var num4 = 25.8;
+        var arrCima = Math.ceil(num4);
+        console.log(arrCima);
+        window.document.write(`${arrCima}<br>`)
+        
+        //Retornar arredondadando para baixo
+
+        var num4 = 25.8;
+        var arrBaixo = Math.floor(num4);
+        console.log(arrBaixo);
+        window.document.write(`${arrBaixo}<br>`)
+
+
+
+    </script>
+</body>
+</html>

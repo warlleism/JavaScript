@@ -1,0 +1,46 @@
+-------------- Tratamento de dados -----------------
+
+- windows.prompt() - te retorna uma string
+
+---------- Converção -------------
+
+- number para um number inteiro - Number.parseInt(n) / parseInt(n)
+
+- number para number flutuante/real - Number.parseFloat(n)/ parseFloat(n)
+
+- number para string - String(n)
+
+- S = 10 - S.toString() - converter valor dentro de uma variável para string
+
+------------- Formatação de Strings -----------------
+
+- Formatador de Strings/ template String
+
+ -     var s = 'JS';
+       var nome = 'warllei';
+       var nota = 20
+       window.alert(`O aluno ${nome} tirou nota ${nota}`); // ${} = Placeholder
+
+- Concatenação     
+
+	var nome = window.prompt('Qual é o seu nome?');
+        window.alert('Olá '+ nome); // + concatenação
+
+- S.length // Quantos caracteres a string tem
+
+- S.toUpperCase() // Tudo para maiúscula
+
+- S.toLowerCase() // Tudo para minuscula
+
+--------- Formatação de números ------------
+
+- fixar um número com 2 casas após o ponto ( . )
+
+Ex:	var n1 = 1545.5
+	document.writeln(`${n1.toFixed(2)}`)
+	document.writeln(`${n1.toFixed(2).replace('.',',')}`)
+	document.writeln(`${n1.toLocaleString('pt-BR', {style: 'currency' , currency: 'BRL'})}`) // Aparecer número com formatação brasileira/localizada
+
+- Currency - Dinheiro
+- {style: 'currency' , currency: 'BRL'} - objeto
+- toLocaleString - String Localizada por parte do mundo

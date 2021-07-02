@@ -1,0 +1,5 @@
+------------- Contexto Léxico -----------------
+
+- Contexto no qual as coisas são declaradas dentro da linguagem.
+
+- Quando uma função é declarada, ela carrega consigo, mesmo que seja chamada em outro local ou passando a função como parâmetro para outra função, o contexto léxico é carregado com ela

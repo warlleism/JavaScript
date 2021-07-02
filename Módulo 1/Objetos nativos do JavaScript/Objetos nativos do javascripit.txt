@@ -1,0 +1,118 @@
+---------------- Objetos nativos do JavaScript --------------
+
+------------ Introdução -----------------
+
+- A definição de objeto é fundamental na linguagem JavaScript, sendo que até mesmo as funções são tratadas como um objeto. Porém, cada implementação da linguagem dispõe de um conjunto de objetos nativos,
+sendo alguns deles naturais da própria linguagem.
+
+
+----------------- Objetos nativos -----------------
+
+- Na linguagem JavaScript, existem os tipos primitivos — number, string, symbol, boolean, undefined e null (são manipulados valores de forma direta (tipos primitivos)) 
+
+— e os tipos de objeto que definem coleções de valores, como o Array (a variável armazena é o endereço de memória que aponta para outros valores.)
+
+- A forma mais simplificada de se definir um objeto pode ser vista no
+
+- Exemplo:
+	 var obj = {} - endereço de memória = {} (Importante destacar que a palavra reservada var não é a única forma de se criar uma variável do tipo objeto, 
+						 sendo possível utilizar let, const ou, mesmo, de forma direta
+						 como para qualquer outro tipo de variável.)
+
+- Outras formas de se declarar/adicionar as propriedade de um objeto
+
+Ex: let carro = { cor: 'Azul', marchas: 5 } // objeto com 2 propriedades
+    
+    carro.velocidadeMaxima = 200 // adiciona nova propriedade
+
+    carro['Marca'] = 'Desconhecida' // adiciona nova propriedade
+
+- As propriedades podem ser adicionadas e, também, excluídas dinamicamente por meio do código “delete objeto.propriedade”.
+
+- Dentre os vários tipos de objetos, encontram-se os especiais, como vetores (Array) e funções (function), de forma que qualquer valor que não seja um tipo primitivo é considerado um objeto em JavaScript
+
+------------- Tipos de objetos nativos ----------------
+
+* objeto global;
+* objetos fundamentais;
+* objetos de número e data;
+* objetos de processamento de texto;
+* objetos de coleção indexada;
+* objetos de coleção chaveada;
+* objetos de dados estruturados;
+* objetos de reflexão.
+
+------------ Objeto global --------------
+
+- Principal objeto de qualquer execução, não dispõe de construtor, nem pode ser invocado como uma função, mas é criado logo antes de qualquer execução do código em si, um objeto único.
+
+- Propriedades de funções:
+
+* Infinity — de tipo numérico utilizada para representar valores infinitos
+* NaN (Not a number ou, em português, não é um número) — tipo numérico retornado em operações matemáticas que resultaram em algum erro;
+* Undefined — simboliza que a variável não teve seu valor definido ou a função não retorna um valor
+* eval() — executa código representado por uma string;
+* uneval()— representa um trecho de código por uma string;
+* isFinite() — verifica se um número é finito;
+* isNaN — verifica se um valor é do tipo NaN;
+* parseFloat()— converte String para ponto flutuante;
+* parseInt()— converte String para um número inteiro;
+* decodeURI(), decodeURIComponent() encodeURI() e encodeURIComponent()— decodificam endereços de recursos.
+
+------------- Objetos fundamentais ----------------
+
+- Todos os demais objetos são derivados de algum objeto fundamental. Os mais utilizados são: Object, Function, Boolean e Symbol.
+
+- Todos os valores diferentes de undefined, null, ± 0, false, NaN e Strings vazias serão interpretados como verdadeiros (true)
+
+- Por fim, o objeto "Symbol" produz um valor único que pode ser utilizado como identificador de propriedades de um objeto.
+
+- Outros objetos fundamentais:
+
+* Error - é um objeto genérico do qual derivam os outros e que implementa as propriedades mensagem e nome para descrever o erro.
+
+* EvalError é instanciado quando se tenta utilizar a função global eval() com um parâmetro que seja possível de traduzir em um código executável para a linguagem JavaScript, normalmente por não obedecer à sintaxe da linguagem.
+
+* RangeError- que ocorre sempre que uma operação qualquer extrapolar os limites definidos para um dado.
+
+Ex: ao referenciar tamanhos inválidos de um Array; ao tentar criar um objeto do tipo Date com horários ou datas inválidos; ao especificar quantidades inválidas de dígitos para um determinado valor numérico
+
+* ReferenceError - Ao se referenciar de forma inválida um endereço de memória qualquer, seja para objetos, propriedades ou qualquer outra variável.
+
+* SyntaxError é utilizado pelo interpretador quando este é incapaz de compreender o código redigido.
+
+* TypeError - ocorre quando a utilização da variável não está de acordo com o tipo definido para ela e, apesar de o JavaScript ser fracamente tipado,
+não é possível ao interpretador encontrar uma conversão válida. 
+
+* URIError - os endereços de recursos que não forem possíveis de ser codificados ou decodificados corretamente.
+
+---- Alguns exemplos dos erros citados anteriormente podem ser vistos a seguir.
+
+// RangeError
+[].length = -1 // Comprimento deve ser sempre positivo
+
+new Date('2019/30/30') // Data inválida.
+
+(1.23).toFixed(-1) // Número de casas decimais deve ser positivo
+
+// ReferenceError
+
+variavel; // Referência a um nome não declarado
+
+// SyntaxError
+
+let var = 1 // var é uma palavra reservada
+
+function(){ return 1 // função sem nome e bloco de código sem fim }.
+
+//TypeError
+
+const obj = {} // Declarada uma referência constante.
+
+obj = {} // Não pode receber o endereço de outro objeto.
+
+null.length // Objeto null não tem a propriedade.
+
+// URIError
+
+encodeURI('\uD800') // Não se pode codificar este caractere

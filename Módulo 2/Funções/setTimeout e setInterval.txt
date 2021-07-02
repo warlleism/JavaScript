@@ -1,0 +1,21 @@
+---------------- setTimeout e setInterval --------------
+
+- Podem prejudicar o desenpenho os computadores mais fracos
+
+- Podemos com estas funções criar ações no software que executam depois de um tempo ou de tempo em tempos;
+
+- Um dos argumentos destas funções é uma callback function;
+
+- Dentro dos timers tem uma função callback assícrona( executada após um tempo determinado em uma das funções timers)
+
+- Assícrona - não é de execução imediata no código
+
+
+--------------- clearTimeout e clearInterval -------------
+
+- podemos por um fim em clearTimeout e clearInterval por meio destes dois métodos.
+
+- Então após determinada condição os timers não serão mais executados.
+
+- Mais utilizado no interval
+

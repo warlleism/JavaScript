@@ -1,0 +1,15 @@
+--------- Array -------------
+
+- Array/vetor é uma estrutura unidirecional onde se consegue armazenar multiplos valores de forma linear.
+
+- Estrutura indexada para que se possa acessar seus elementos.
+
+- Em JavaScript os arrays são heterogenios e flexiveis(crescendo e diminuindo).
+
+- variável.length // Quantidade de elementos dentro tem um array.
+
+- variável.push({ id: 3 }, false, null, nome2 = 'teste') // Adicionar valores ao array
+
+- variável.pop() Ou delete variável[indice] // Retorna  e apaga o ultimo valor dentro do array
+
+- O ideal é que um array seja composto por elementos do mesmo tipo.

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionar e deletar propriedades no Objeto</title>
+</head>
+
+<body>
+    <script>
+        var usuario = {
+            nome: 'Warllei',
+            'nome-completo': 'Warllei Martins',
+            idade: 25,
+            youtube: 'ProgramadorAqui'
+        };
+
+        //Adicionando propriedades//
+        usuario.ano = 2021;
+        console.log(usuario);
+
+        //Apagando propriedades//
+        delete usuario.youtube;
+        console.log(usuario);
+    </script>
+</body>
+
+</html>

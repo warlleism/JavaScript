@@ -1,0 +1,9 @@
+---------- CalllBack ------------
+
+- Chamada de retorno
+
+- é uma função ou url que será executada quando algum evento acontecer ou quando algum código chegar ao estado que era desejado. normalmente é assícrona.
+
+- Como ela é assícrona então não será rodada imediatamente, a aplicação continuara rodando enquanto ela espera o momento da sua execução.
+
+- Na maioria das vezes e passada como argumento de uma outra função.

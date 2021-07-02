@@ -1,0 +1,55 @@
+-------------- Operadores Relacionais -----------------
+
+ *5 > 2 - true
+ *5 < 2 - false
+ *5 >= 5 - true
+ *5 <= 2 - false
+ *5 == 2 - false
+ *5 != 2 - true
+
+--- Operadores de identidade/igualdade restrita ---
+
+ 5 == 5 - true
+ 5 == '5' - true - sinais de igualdade NÃO testa o tipo ( 5 e '5' são valores de tipos diferentes porém com a mesma grandeza)
+ 5 === '5' - false -> Operadore de identidade/igualdade restrita (Vendo se os valores são IDÊNTICOS/com o mesmo valor e mesmo tipo)
+ 5 === 5 - true
+
+-------------- Operadores Lógicos -------------------
+
+- != - negação/ não - uma coisa que não é verdadeira é falsa, uma coisa que não é falsa é verdadeira//Se é true vira false, se é false vira true
+
+- && - conjunção/ e
+
+- || - disjunção/ ou 
+
+- Ex - a > b && b % 2 == 0 - quando se tem operadores aritiméticos ,relacionais e lógicos na mesma expressão,
+ela é resolvida na seguinte ordem:
+
+- Primeiro operadores aritiméticos
+
+- Segundo Operadores relacionais
+
+- Depois Operadores lógicos
+
+-------------------- Operadores ternarios -------------
+
+- junta 3 operandos
+
+- ? 
+
+- : 
+
+- teste ? true : false
+
+Ex: media >= 7 ? "aprovado":"Reprovado"
+
+
+-------------------- Operadores unários -------------
+
+- Acrecenta uma unidade ao valor da variável
+
+- Pré-fixada tem uma precedência maior do que a pós-fixada
+
+- num1++ - pós-fixada
+
+- --num1 - pré-fixada

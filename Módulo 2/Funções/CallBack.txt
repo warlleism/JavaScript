@@ -1,0 +1,11 @@
+--------------- CallBack -----------------
+
+- As funções de retorno ou funções de callback são funções passadas como argumentos dentro de outras funções a fim de serem utilizadas em um momento posterior. 
+
+- Chamar de volta.
+
+- Callback - É passar uma função para outra função , quando determinado evento acontecer esta função passada vai ser disparada e chamada de volta.
+
+- Função que será executada em algum momento não padrão.
+
+- O callback é atrelado ao processo assícrono, que não acontece exatamente no momento em que o evenço é lançado. O momento é o usuário quem define.

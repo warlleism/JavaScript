@@ -1,0 +1,22 @@
+------------- introdução à OO -------------------
+
+- Antes da OO na história dos paradigmas nós tinhamos antes da programação procedural o go to(programação não estruturada), rudimentos de estruturas de controle, desvio de fluxo apartir de uma palavra reservada "go to"(código não estruturado).
+
+- Linguagem estruturadas - OO é uma linguagem estruturada
+
+- Paradigma Procedural - É baseado no procedimento(função), trechproo de código que recebe um nome e você utiliza em outros lugares.
+
+- Objetos funcionam como capsulas, que agrupam atributos e comortamentos. Em um objeto pode conter outros objetos, pode ter herança que heram caracteristicas. 
+
+- A ideia do paradigma da OO é trazer a realizade(mundo real) para a programação.
+
+---------- Principios importantes -----------------
+
+- 1. Abstração = Pegar um objeto do mundo real a traduzir para dentro do sistema
+
+- 2. Encapsulamento = Ter detalhes de implementação escondidos e mostrar para quem precisa usar. Evita a escalada no nível de dependência.
+
+- 3. Herança = Serve para reuso de código. Você recebe atributos e comportamentos de um objeto pai. JS não permite herança multipla(heraça de diversos).
+(priorizar a composição(T1) ao invés da herança(E1))
+
+- 4. Polimorfismo = Multiplas formas. A partir de uma variável de um tipo mais genêrico vc é capaz de atrituir diferentes tipos por causa da relação entre eles.

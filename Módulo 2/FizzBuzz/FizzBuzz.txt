@@ -1,0 +1,3 @@
+------------ FizzBuzz --------------
+
+- Ele faz a comparação de valores e obter um tipo de retorno baseado nesse valor de entrada

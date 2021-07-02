@@ -1,0 +1,5 @@
+------------------ Classe vs Função Factory --------------------
+
+- Classes - É uma forma diferente de se construir função em js, mais puxado para a POO
+
+- Classe é uma função declarada de forma diferente

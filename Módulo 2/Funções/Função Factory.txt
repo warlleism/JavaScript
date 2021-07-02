@@ -1,0 +1,7 @@
+-------------- Função Factory (funções fabrica)  ----------------------
+
+- Padrão de projeto comum no JS 
+
+- É uma função que retorna e novos objetos de forma mais dinâmica.
+
+- Uma factory também pode retornar objetos com funções dentro dela.

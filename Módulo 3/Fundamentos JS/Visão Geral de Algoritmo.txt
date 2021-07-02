@@ -1,0 +1,3 @@
+-------------  Visão Geral de Algoritmo ---------------
+
+- Algoritimo - é uma sequência de passos que podem conter repetições.

@@ -1,0 +1,26 @@
+----------- Estruturas de Dados ------------
+
+- Estruturas de dados visa estruturar, organizar e administristrar os dados.
+
+- Garante a ordem.
+
+- FiFO - Fila ( first in first out ) primeiro a entrar é o primeiro a sair.
+
+- LIFO - pilha ( Last in Last out ) ultimo a entrar é o ultimo a sair.
+
+- Estrutura de arvore - pastas dentro de pastas.
+
+- Estrutura de Tabelas
+
+- Estruturas de dados básicas - int, real, letra, bool
+
+------------ Variáveis e Constrantes -------------- 
+
+- Servem para armazenar dados e rotular um determinado valor.
+
+- Operações
+
+* lógicas
+* relacionais
+* atributos
+* aritiméticos

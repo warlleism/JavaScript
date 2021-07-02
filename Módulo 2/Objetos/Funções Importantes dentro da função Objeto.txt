@@ -1,0 +1,21 @@
+-------------- Herança -----------------
+
+- Principio da OO que faz com que você receba do seu pai atributos e comportamentos para serem reusados.
+
+- Só pode ter um pai que vai servir de classe pai.
+
+- Atributo [[propotype]](conceito de prototipo) só está disponível dentro de uma função.
+
+- [[propotype]] é diferente da propriedade Prototype.
+
+- Um objeto criado aponta por padrão para a função Object.proptotype.
+
+- Prototype esta presente apenas dentro de funções.
+
+- Um objeto em JS tem uma referência para o seu prototipo, e essa é a forma como js define herança
+
+- Apartir da referência para um prototipo vc tem a referência para outro objeto, e esse objeto tem aributos e comportamentos que podem ser acessados apartir do objeto filho
+
+- __proto__ - Forma de acessar o prototipo de um objeto de dentro do Próprio objeto
+
+- Shadowing - Sobreamento. acontece quando o valor em um objeto sobreescreve o valor definido no prototipo

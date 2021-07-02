@@ -1,0 +1,27 @@
+------------- Null & Undefined ----------------
+
+- Atribuiçao por referência. Quando se passa o endereço de memória onde o objeto esta armazenado, apartir das duas referências/variáveis vc consegue acessar o objeto.
+Ex: const a = {nome: 'warllei'}
+    const b = a
+    b.name = 'Rafael'
+    a.nome = 'Rafael'
+
+- Valores primitivos não refênciam espaço em memória. Então é feita uma cópia por valor.
+Ex:   let c = 3
+      let d = c
+      d++
+      d = 4
+      c = 3
+
+- Atribuições podem ser por valor (tipos primitivos) o podem ser por referência (objetos ,funções etc)
+
+- Undefined - não foi inicializada. Caso não tenha sido atribuido valor.
+Ex: var valor;
+
+- not defined - significa que a variável nem foi definida.
+
+- null - Variável que não está apontando para nenhum endereço de memória. sem valor dentro dela.
+
+- 
+
+-  

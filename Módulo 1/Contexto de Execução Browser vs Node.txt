@@ -1,0 +1,7 @@
+----------- Contexto de Execução: Browser vs Node ---------------
+
+- Run-time - Onde está executando, no front-end(browser) , back-end(node)
+
+- Execução no browser - Trabalhando com operações assícronas para poder chamar coisas no bck-end,callback
+
+- Dentro de node cada arquivo é um módulo diferente

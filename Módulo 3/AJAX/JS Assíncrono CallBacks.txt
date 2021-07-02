@@ -1,0 +1,11 @@
+----------- JS Assíncrono CallBacks -------------------
+
+- síncrono - Executa um após o outro.
+
+- CallBack - chamada de volta. é uma função que geralmente tem um erro no primeiro parâmetro e qualquer outra coisa que a função vá fazer nos outros parâmetros
+
+- Promisse - Quando é feito o promisse se retorna de imadiato uma promessa de que no futuro o valor será retornado (promisse é um corpo que também passa um callback)
+
+- Assim como o Callback tem erro e conteúdo, o promisse tem resolver e rejeitar em seu construtor - Promise(( , )) = Promise((resolve, rejeitar){})
+
+- Async/await - é uma promisse. Qualquer função que retorna um promisse é possível dar um await nela

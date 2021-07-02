@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(204, 194, 214);
+            font-size: 30px;
+            padding: 10px;
+            color: rgb(41, 107, 230);
+        }
+        button{
+            padding: 20px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h4>Retornar valor arredondando</h4>
+        <p id="resultado">Resultado</p>
+    </div>
+
+    <div>
+        <h4>Retorna o valor positivo </h4>
+        <p id="resultado2">Resultado</p>
+    </div>
+
+    <div>
+        <h4>Retorna o raiz quadrada</h4>
+        <p id="resultado3">Resultado</p>
+    </div>
+
+    <div>
+        <h4>Retorna o valor arrendodando para cima</h4>
+        <p id="resultado4">Resultado</p>
+    </div>
+
+    <div>
+        <h4>Retorna o valor arrendodando para baixo</h4>
+        <p id="resultado5">Resultado</p>
+    </div>
+
+    <script>
+        function minhaFuncao(){
+            document.getElementById("resultado").innerHTML = Math.round(25.5)
+            document.getElementById("resultado2").innerHTML = Math.abs(-50)
+            document.getElementById("resultado3").innerHTML = Math.sqrt(9)
+            document.getElementById("resultado4").innerHTML = Math.ceil(25.8)
+            document.getElementById("resultado5").innerHTML = Math.floor(25.8)
+        }
+      
+    </script>
+
+    <button id="botão" onclick="minhaFuncao()">Testar</button>
+    
+</body>
+</html>

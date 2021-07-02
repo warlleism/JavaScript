@@ -1,0 +1,7 @@
+---------------- Hoisting ---------------
+
+- Jogar para cima//içamento
+
+- içamento só ocorre com variáveis
+
+- Quando se declara uma variável usando o var ela sofre o hoisting

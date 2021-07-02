@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adicionando e deletar propriedades no Objeto 2</title>
+</head>
+
+<body>
+    <script>
+        //Adicionando uma função a um objeto//
+        var usuario = {
+            digaOi: function (nome) {
+                return `Olá ${nome}`;
+            }
+        };
+
+        //Adicionando uma função a um objeto de forma mais curta//
+        var usuario2 = {
+            digaOi(nome) {
+                return `Olá ${nome}`;
+            }
+        };
+
+        console.log(usuario.digaOi('Warllei'))
+        console.log(usuario2.digaOi('Warllei'))
+
+        //Passando uma variável externa para dentro do objeto
+        var cor = 'azul';
+
+        var usuario3 = {
+            nome: 'warllei',
+            cor: cor
+        };
+
+        console.log(usuario3);
+
+        //Passando uma variável externa para dentro do objeto forma mais curta
+        var cor = 'rosa';
+        var idade = 25
+
+        var usuario4 = {
+            nome: 'warllei',
+            cor,
+            idade
+        };
+
+        console.log(usuario4);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+------------- Contexto Léxico -----------------
+
+- Contexto no qual as coisas são declaradas dentro da linguagem.
+
+- Quando uma função é declarada, ela carrega consigo, mesmo que seja chamada em outro local ou passando a função como parâmetro para outra função, o contexto léxico é carregado com ela.
+
+------------------- Closures (fechamento) ---------------------
+
+- é o escopo criado quando uma função é declarada.( é criado um escopo em volta onde a vunção foi declarada )
+
+- Esse escopo permite que você acesse e manipular as variáveis que foram declaradas externas a função 
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Aritiméticos</title>
+    <style>
+        body{
+            background-color: rgb(177, 130, 221);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <script>
+
+        var soma1 = 3 % 2 + 4 / 2;
+        document.writeln(`${soma1}<br>`)
+
+
+        var soma2 = 5; 
+        soma2 += soma1;// Recebe ele mesmo mais soma 1
+        document.writeln(`${soma2}<br>`);
+
+        var soma3 = 10;
+        soma3 -= soma2;
+        document.writeln(`${soma3}<br>`);
+
+        var soma4 = 10;
+        soma4 **= 2;
+        document.writeln(`${soma4}<br>`);
+
+        // Operadores de incremento
+
+        var num = 10;
+        num ++;
+        document.writeln(`${num}<br>`)
+
+        var num = 10;
+        num --;
+        document.writeln(`${num}<br>`)
+
+    </script>
+    
+</body>
+</html>

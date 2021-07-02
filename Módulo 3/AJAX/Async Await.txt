@@ -1,0 +1,5 @@
+----------- Async / Await --------------
+
+- Forma mais limpa de se chamar promisses
+
+- O  Await  é utilizado antes da chamada de uma promisse mas só pode ser utilizada dentro de uma função

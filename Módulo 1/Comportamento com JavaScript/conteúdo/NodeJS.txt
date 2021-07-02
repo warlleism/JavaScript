@@ -1,0 +1,7 @@
+--------------- NodeJS -------------------
+
+- É uma plataforma que roda JavaScript no back-end no servidor. plataforma back-end capaz de executar JS e fazer IO de forma diferente
+
+- É composto de partes(blocos), v8 JavaScript (engine) 
+
+- ctrl + l - limpar o node

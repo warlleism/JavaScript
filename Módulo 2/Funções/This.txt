@@ -1,0 +1,27 @@
+------------- This -------------
+
+- This - Esta.
+
+- No "node" cada arquivo é um módulo, então o this usado em uma função será amarrado ao contexto dela
+
+- O this depende do contexto e escopo onde ela está. 
+
+- Forma de referênciar o objeto atual da execução.
+
+- This é sempre o objeto que esta sendo referêncuado naquele contexto de execução(dono da função que esta sendo executada naquele contexto)
+
+- O this pode variar de acordo da forma como é chamada a função.
+
+- This não varia nunca quando está em uma função Arrow.
+
+- O This é definido no momento que a função for definida
+
+- Se a função for escrita dento do contexto global, o this sempre ira referênciar para o contexto global.
+
+-------------- "this" e a Função bind -----------
+
+- No bind você passa um objeto no qual você quer que seja resolvido o this
+
+- O bind Método responsável por amarrar um determinado objeto para ele ser o dono da execução naquele método
+
+- A função bind retorna uma outra função

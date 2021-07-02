@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marge de objetos com Object.assingn</title>
+</head>
+
+<body>
+    <script>
+
+        //Juntando objetos com Object.assign
+
+        var usuario = {
+            nome: 'Warllei',
+            idade: 25
+        };
+
+        var InformacoesExtras = {
+            pais: 'Brasil',
+            estado: 'ES'
+        };
+
+        var novoUsuario = Object.assign(usuario, InformacoesExtras); // jogando InformacoesExtras para dentro de usuario
+        var novoUsuario = Object.assign({} , usuario, InformacoesExtras); // Criando um objeto VAZIO com = {}
+        console.log(novoUsuario)
+
+        //Juntando objetos com spread ( ... )
+
+        var novoUsuario2 = {
+            ...usuario,
+            ...InformacoesExtras,
+            ...{
+                sexo: 'Masculino',
+                profissao: 'Programador'
+            }
+        };
+
+        console.log(novoUsuario2)
+
+        // Passando variável como chave
+
+        var nomeVariavel = 'Estado'
+
+        var usuario3 = {
+            nome: 'Warllei',
+            idade: 25,
+            nomeVariavel: 'Espirito Santo',
+            [nomeVariavel]: 'Espirito Santo'//Valor dentro da variável se torna chave
+        };
+
+        console.log(usuario3);
+
+
+
+    </script>
+</body>
+
+</html>

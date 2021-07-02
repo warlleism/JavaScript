@@ -1,0 +1,9 @@
+--------------- Objetos -------------------
+
+ - {} para declarar objetos
+
+Ex: let amigo = {chave(atributo):valor(valor)}
+
+- Arrays e Objetos são objetos. São estruturas da mesma classe.
+
+- objeto em JS é uma coleção de chave e valor,com identificador e valor de qualquer tipo.

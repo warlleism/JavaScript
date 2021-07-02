@@ -1,0 +1,52 @@
+----------------- Variáveis e Tipos Primitivos ---------------------
+
+- Variáveis guardam dados
+
+- Variáveis podem almentar e diminuir conforme o tempo(uma var com string pode receber um number,boolean e etc...)
+
+var s1 = "JS" - Aspá dupla
+
+var s2 = 'Curso' - Aspá simples
+
+var s3 = `Guanabara` - Crase
+
+-------- Nome de cada variável = idêntificador
+
+- Podem começar com letra,$ ou _
+
+- Não podem começar com números
+
+- É possível usar acentos e símbolos
+
+- Não podem conter espaços
+
+- Não podem ser palavras reservadas (function,var,windows)
+
+----------- Dicas para nomes de identificadores --------------
+
+- Maiúscula e minúsculas fazem diferença
+
+Ex: var a = 10 , var A = 20 - São variáveis diferentes
+
+- Escolher nomes coerentes para as variáveis
+
+Ex: var nome = "", var idade = , var soma =
+
+--------------- Tipos primitivos primordiais ------------
+
+- typeof - Para trabalhar com tipos primitivos
+
+- number - infinity,NaN
+
+- boolean - True, Falce
+
+- string
+
+- null
+
+- undefined
+
+- object - Array
+
+- function
+

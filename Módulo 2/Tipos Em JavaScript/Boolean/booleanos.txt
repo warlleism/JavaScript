@@ -1,0 +1,11 @@
+------------ Boolean -------------
+
+ -  !! = negação que inverte o valor boleano
+
+- ! - 1 negação trasfoma em true em false ou inverso.
+
+- !! - 2 negações inverte a primera negação Ex: !true = false , !!true - false depois true = true
+
+- ! = a negaçao força uma conversão para verdadeiro ou falso 
+
+- Todo valor inteiro é verdadeiro

@@ -1,0 +1,24 @@
+----------- Eventos DOM --------------
+
+- Eventos DOM - https://www.w3schools.com/jsref/dom_obj_event.asp
+
+- Evento é tudo aquilo que pode acontercer com a tag/elemento
+
+- Eventos:
+
+* onmouseenter - mouse entrou na div
+
+* onmousemove - mousa moveu dentro da div
+
+* onmousedown - segurar o click
+
+* onmouseup - soltar 
+
+* onclick - clicar
+
+* onmouseout - mover mouse pra fora 
+
+- Além de disparar diretamente pelo HTML dá para disparar eventos utilizando Listeners (ouvidores) dentro do JS
+
+
+

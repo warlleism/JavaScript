@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex001</title>
+    <style>
+        body {
+            color: rgb(26, 23, 17);
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Iniciando com DOM</h1>
+    <p>Resultado</p>
+    <div id="msg">Clique-aqui</div>
+    <div name="nm">Olá Mundo!</div>
+    <div class="cl">Olá Mundo!</div>
+    <div class="qr">Olá Mundo!</div>
+
+    <script>
+
+        //Comente os códigos a cima caso os de baixao não estejam funcionando
+
+        //Selecionando por ID
+
+        var d = window.document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        window.document.getElementById('msg').innerHTML = 'Resultando nisso aqui'
+
+        //Selecionando por nome
+
+        var nome = window.document.getElementsByName('nm')[0] //Sempre que for selecionar mais de um elemento deve-se declarar sua posição [0]/[1]/[2]
+        nome.innerText = 'Olá'
+        nome.style.backgroundColor = 'red'
+
+        
+        //Selecionando por tag
+   
+        var corpo = window.document.body.style.backgroundColor = 'rgb(161, 243, 202)';//Assim
+        corpo.style.backgroundColor = 'rgb(161, 243, 202)';//Ou Assim
+        
+        var a = window.document.getElementsByTagName('p')[0].innerText = 'Que porra é essa?'//Pegando os elementos com a tag "p" 
+                                                                                 // [0] = o primeiro "p" que aparecer.innerText = sobrescrever o documento//  
+                                                                                
+        //Selecinando por classe
+
+        var classe = window.document.getElementsByClassName('cl')[0].innerHTML = 'sadasdasdasdas'
+
+        // Selecionando por QuerySelector
+
+        var d = window.document.querySelector('div.qr')
+        d.style.backgroundColor = 'red'
+                                                                                        
+                                                                                    
+
+    </script>
+</body>
+
+</html>

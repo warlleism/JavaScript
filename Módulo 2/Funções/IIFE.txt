@@ -1,0 +1,11 @@
+----------------- IIFE ------------------
+
+- Immediatle invoked function expression
+
+- Função auto invocada
+
+- Usada para fugir do escopo global quando se está usando o browser
+
+- Tudo criado dentro da função fica no escopo local dela
+
+- Qualquer constante,variável estará dentro do contexto da função

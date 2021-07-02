@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+
+<body>
+    <script>
+        var usuario = {
+            nome: 'Warllei',
+            'nome-completo': 'Warllei Martins',//Caracter especial no identificador
+            idade: 25,
+            youtube: 'ProgramadorAqui'
+        };
+
+        console.log(usuario);//imprimindo todo objeto
+        console.log(usuario.idade);//imprimindo a idade
+        console.log(usuario.youtube);
+        console.log(usuario.nome, usuario.idade);//imprimindo nome e idade
+        console.log(usuario['nome-completo']);//Quando o identificador tem caracter especial ( - )
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+------------- BOM / Browser Object Model ----------------
+
+- Quando é aberto uma página no navegador, automáticamente é criado um objeto.
+
+- O "window" é o primeiro objeto/no topo. Serve para acessar outros métodos,funções e objetos. 
+
+Ex de métodos: window.screed/window.document/ window.alert('')/ window.frames[]/ window.history/ window.console.log()
+
+- O BOM está associado com alguns objetos referentes a um navegador.
+
+- Objetos relacionados a janela do navegador - Screen, Navigation, Location, History etc...
+
+- Navigator -Informações do navegador. em questões de compatibilidade as informações não estão 100% corretas. Capaz de mostrar versão,nome,linguagem do navegador.
+
+- Screen - Informações da janela do navegador, como tamanhos.
+
+- Location - Informações de URL e redirecionamento de página.
+
+- History - Relacionado a redirecionamento de página onde são guardadas as informações de páginas acessadas antes e depois.
+
+--------- Document ----------
+
+- Objeto vindo do BOM. Ele faz parte do Documente Object Model DOM.
+
+- DOM tem haver com os elementos da página / HTML. Através do DOM ( window.document ) nós vamos manipular os elementos HTML.

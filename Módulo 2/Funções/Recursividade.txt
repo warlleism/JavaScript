@@ -1,0 +1,31 @@
+------------ Recursividade ----------------
+
+- Utilizar uma função que chama a sí propria até a sua resolução.
+
+- A ideia principal da recursividade é dividir a resolução de um problema grande através da resolução de vários problemas pequenos.
+
+- 3 leis básicas da recursividade:
+
+* O algoritimo recursivo deve ter um caso básico , um caso em que ele vai ser encerrado.
+
+* um algoritimo recursivo deve mudar o seu estado e se aproximar do caso básico, ou seja, a cada chamada da função recursiva o resultado obtido deve se aproxímar daquele resultado que é previsto como resultado final.
+
+* Um algoritimo recursido deve chamar a si mesmo recursivamente.
+
+------ Recursão Direta -------
+
+- Quando a recursão chama ela mesma.
+
+----- Recursão Indireta -------
+
+- Onde a primeira função chama uma segunda função que por sua vez chama a primeira função.
+
+----- Função recursiva em cauda -----
+
+- A chamada da recursividade é a ultima instrunção a ser executada.
+
+----- Função Nom-Tail Recursive -----
+
+- Qualquer outro caso que não tenha casada
+
+- A chamada da recursividade não é a ultima instrunção a ser executada.

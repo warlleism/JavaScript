@@ -1,0 +1,27 @@
+-------------- Operadores ---------------
+
+- Aritiméticos - + , - , * , / , % , **
+
+- % - Resto da divisão inteira Ex: 5/2 = 2 assim que a virgula for colocada o calculo acaba
+
+------ Ordem de precedência ------
+
+1 - () 
+2 - ** 
+3 - / * %  
+4 - + -
+
+--------- simplificando
+
+n +=
+n -=
+n *=
+n /=
+n **=
+n %=
+
+------------- Operadoes de encremento -------------
+
+- x++ = x = x + 1
+
+- x-- = x = x - 1

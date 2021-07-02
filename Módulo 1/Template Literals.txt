@@ -1,0 +1,21 @@
+------ Template Literals ------
+
+- Literal - É o dado/valor usado sem armazenar em uma variável( ex: console.log('Escola') - literal// var a = 'Escola' console.log(a) - Não literal  )
+
+- Template Literals é o nome da funcionalidade que veio com o ecmascript6 que permite inserção de variáveis dentro de uma string, de forma bem mais fácil.
+
+- Normalmente é usado o operador + para concatenar valores na string. Porém com a funcionalidade do tamplate literals não é necessário, basta escrever a string usando Acento grave " `` ".
+
+
+- Ex: 
+
+var nome = "warllei"
+
+Console.log(`Seja bem vindo ${nome} `)
+
+- O templet string respeita as quebras de linhas.
+
+- Ex:
+
+- Console.log(`tudo vale a pena,
+	quando a alma não é pequena.!`)

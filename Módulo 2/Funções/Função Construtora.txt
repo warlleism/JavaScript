@@ -1,0 +1,3 @@
+------------ Função Construtora ----------------
+
+- Usar a função em  JS como se usaria em classe em C#

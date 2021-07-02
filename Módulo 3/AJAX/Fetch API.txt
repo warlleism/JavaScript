@@ -1,0 +1,13 @@
+------------ Fetch API -----------
+
+- Usado para enviar requisições assícronas para o servidor.
+
+- Funcionalidade nativa do JS que substitui a funcionalidade xmlhttprequest
+
+- Capaz de desenvolver toda a parte de requisições assícronas de forma mais rápida e fácil.
+
+- Fetch tem o conseito de promisse então é necessário o uso do then para poder buscar as informações da requisição 
+
+- Retorna promisses
+
+- 

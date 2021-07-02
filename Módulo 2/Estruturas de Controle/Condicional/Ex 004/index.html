@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aninhamento</title>
+</head>
+<body>
+
+    <script>
+        var aluno = String(window.prompt("Qual Seu Nome?"))
+        var nota = Number.parseInt(window.prompt("Qual Sua Nota?"))
+        
+        if(nota < 50 ){
+            document.write(` ${aluno} Sua nota foi ${nota} = Reprovado!`)
+        }
+        else if(nota >= 60){
+            document.write(` ${aluno} Sua nota foi ${nota} = Aprovado!`)
+        }
+        else if(nota < 60 && nota >= 50){
+            document.write(` ${aluno} Sua nota foi ${nota} = Recuperação!`)
+        }
+    </script>
+    
+</body>
+</html>

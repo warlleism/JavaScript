@@ -1,0 +1,28 @@
+--------------- Getters/Setters --------------
+
+- Getters/Setters são funções, que dentro delas temos valores que serão acessados
+
+- Vantagem de se acessar valores em cima de uma funções - pode-se fazer validação, processamento antes de devolver o valor da vairável.
+
+- Serve para ter encapsulamento em estruturas como objeto.
+
+- Métodos para alterar atributos e dados privados.
+
+ - o Getters/Setters permite a sobrecarga de métodos(vários métodos com o mesmo nome só que com parâmetros diferentes)
+
+-------------- Setters --------------
+
+- São funções especiais, que utilizamos para alterar valores dos atributos do nosso objeto.
+
+- Método setter - Usado para atribuir um valor ao atributo do objeto privado.
+
+- São usados para alterar os valores de objetos.
+
+
+----------------- Getter -------------------
+
+- Método geter - Consegue apenas  leitura e atribuir valor.
+
+- Usado para definir os métodos, obter o valor de uma propriedade
+
+- Usado para acessar atributos privados ou não de um objeto

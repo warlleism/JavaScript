@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Lógicos</title>
+    <style>
+        body {
+            background-color: rgb(177, 130, 221);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+
+        //Operadores Lógicos &&/!/||
+
+        // Conjução
+
+        var a = 5;
+        var b = 8;
+        var operacao = a > b && b % 2 == 0;
+        document.write(`a > b && b % 2 == 0 = ${operacao}<br>`)
+
+        // Disjunção
+        
+        var a2 = 10;
+        var b2 = 5;
+        var operacao2 = a2 >= b2 || b2 / 2 == 5;
+        document.write(`a2 >= b2 || b2 / 2 == 5 = ${operacao2}<br>`)
+
+        // Disjunção
+
+        var a3 = 10;
+        var b3 = 5;
+        var operacao3 = a3 >= b3 || b3 / 2 == 5;
+        document.write(`a3 >= b3 || b3 / 2 == 5 = ${operacao3}`)
+
+        //Negação
+
+        var a4 = 10;
+        var b4 = 5;
+        var operacao4 = !(a4 > b4);
+        document.write(`!a4 >= b4 = ${operacao4}`)
+
+    </script>
+</body>
+
+</html>
